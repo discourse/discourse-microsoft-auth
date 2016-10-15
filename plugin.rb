@@ -14,7 +14,7 @@ class Office365Authenticator < ::Auth::OAuth2Authenticator
   PLUGIN_NAME = 'oauth-office365'
 
   def name
-    'office365'
+    'microsoft_office365'
   end
 
   def after_authenticate(auth_token)
@@ -33,7 +33,7 @@ class Office365Authenticator < ::Auth::OAuth2Authenticator
   end
 
   def register_middleware(omniauth)
-    omniauth.provider :office365,
+    omniauth.provider :microsoft_office365,
                       setup: lambda { |env|
                         strategy = env['omniauth.strategy']
                         strategy.options[:client_id] = SiteSetting.office365_client_id
@@ -47,14 +47,14 @@ auth_provider :title => 'with Office365',
               :message => 'Log in via Office365',
               :frame_width => 920,
               :frame_height => 800,
-              :authenticator => Office365Authenticator.new('office365',
+              :authenticator => Office365Authenticator.new('microsoft_office365',
                                                           trusted: true,
                                                           auto_create_account: true)
 
 
 register_css <<CSS
 
-.btn-social.office365 {
+.btn-social.microsoft_office365 {
   background: #EB3D01;
 }
 
