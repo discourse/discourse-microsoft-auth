@@ -20,7 +20,7 @@ Login Screen
 3. Visit https://developer.linkedin.com/docs/oauth2 and follow the directions for [creating an application](https://www.linkedin.com/secure/developer?newapp=), or look up the details of your [existing application](https://www.linkedin.com/secure/developer).
 4. Update the plugin settings in the Admin > Settings area.
 5. Add the your website as an authorized redirect url using  
-`https://example.com/auth/office365/callback`  
+`https://example.com/auth/microsoft_office365/callback`  
 (replacing the https with http and example.com with your full qualified domain/subdomain)
 
 ## Authors
