@@ -5,8 +5,7 @@
 # url: https://github.com/cpradio/discourse-plugin-office365-auth
 
 require 'auth/oauth2_authenticator'
-
-gem 'omniauth-microsoft-office365', '0.0.7'
+require File.expand_path('../omniauth-microsoft365.rb', __FILE__)
 
 enabled_site_setting :office365_enabled
 
