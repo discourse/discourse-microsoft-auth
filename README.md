@@ -13,9 +13,15 @@ Login Screen
 - Log Issues
 - Submit PRs to help resolve issues
 
+## Prerequisites
+
+First, you need access to an account in an Office 365 Subscription. This can be an existing subscription you have for your work or business, an [Office 365 Developer Subscription](http://dev.office.com/devprogram), or you can start with a [free 30-day trial](https://portal.office.com/Signup/Signup.aspx). 
+
+The name on the subscription you use to register your app will show as the publisher for that app when users are prompted to give consent.
+
 ## Installation
 
-1. Follow the directions at [Install a Plugin](https://meta.discourse.org/t/install-a-plugin/19157) using https://github.com/cpradio/discourse-plugin-office365-auth.git as the repository URL.
+1. Follow the directions at [Install a Plugin](https://meta.discourse.org/t/install-a-plugin/19157) using `https://github.com/cpradio/discourse-plugin-office365-auth.git` as the repository URL.
 
 2. Rebuild the app using `./launcher rebuild app`
 
