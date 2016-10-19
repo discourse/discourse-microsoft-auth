@@ -29,12 +29,12 @@ The name on the subscription you use to register your app will show as the publi
   * Generate a New Password under Application Secrets (copy the password, you will need it for your admin settings in Discourse)
   * Add a Web Platform
   * Add your website as a redirect uri using  
-     `https://example.com/auth/microsoft_office365/callback`  
+     `https://forum.example.com/auth/microsoft_office365/callback`  
      (Office 365 requires HTTPS, this will not work without it)
   * Add a Delegated Permission of `User.Read`
   * Make sure `Live SDK support` is checked.
   
-4. Update the plugin settings in the Admin > Settings area.
+4. Update the plugin settings in the Admin > Settings > Plugins area.
 
 ## Authors
 
