@@ -2,7 +2,7 @@
 # about: Enable Login via Office365
 # version: 0.0.1
 # authors: Matthew Wilkin
-# url: https://github.com/cpradio/discourse-plugin-office365-auth
+# url: https://github.com/discourse/discourse-plugin-office365-auth
 
 require 'auth/oauth2_authenticator'
 require File.expand_path('../omniauth-microsoft365.rb', __FILE__)
