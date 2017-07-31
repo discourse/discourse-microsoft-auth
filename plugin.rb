@@ -21,9 +21,9 @@ class Office365Authenticator < ::Auth::OAuth2Authenticator
 
     if result.user && result.email && (result.user.email != result.email)
       begin
-        result.user.update_columns(email: result.email)
+        result.user.primary_email.update!(email: result.email)
       rescue
-        used_by = User.find_by(email: result.email).try(:username)
+        used_by = User.find_by_email(result.email)&.username
         Rails.loger.warn("FAILED to update email for #{user.username} to #{result.email} cause it is in use by #{used_by}")
       end
     end
