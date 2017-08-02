@@ -41,15 +41,16 @@ class Office365Authenticator < ::Auth::OAuth2Authenticator
   end
 end
 
-auth_provider :title => 'with Office365',
-              enabled_setting: "office365_enabled",
-              :message => 'Log in via Office365',
-              :frame_width => 920,
-              :frame_height => 800,
-              :authenticator => Office365Authenticator.new('microsoft_office365',
-                                                          trusted: true,
-                                                          auto_create_account: true)
-
+auth_provider title: 'with Office365',
+  enabled_setting: "office365_enabled",
+  message: 'Log in via Office365',
+  frame_width: 920,
+  frame_height: 800,
+  authenticator: Office365Authenticator.new(
+    'microsoft_office365',
+    trusted: true,
+    auto_create_account: true
+  )
 
 register_css <<CSS
 
