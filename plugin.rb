@@ -39,6 +39,10 @@ class Office365Authenticator < ::Auth::OAuth2Authenticator
                         strategy.options[:client_secret] = SiteSetting.office365_secret
                       }
   end
+
+  def enabled?
+    SiteSetting.office365_enabled
+  end
 end
 
 auth_provider title: 'with Office365',
