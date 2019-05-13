@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # name: discourse-plugin-office365-auth
 # about: Enable Login via Office365
 # version: 0.0.1
