@@ -1,10 +1,10 @@
 plugins:
-  office365_enabled:
+  microsoft_365_enabled:
     client: true
     default: false
-  office365_client_id:
+  microsoft_365_client_id:
     client: false
     default: ''
-  office365_secret:
+  microsoft_365_secret:
     client: false
     default: ''

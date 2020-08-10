@@ -1,11 +1,11 @@
-# Office365 OAuth Login Plugin
-This plugin adds support logging in via Office365.
+# Microsoft 365 OAuth Login Plugin
+This plugin adds support logging in via Microsoft 365.
 
 Admin Settings  
-![](https://raw.githubusercontent.com/discourse/discourse-plugin-office365-auth/master/screenshot-admin-settings.png)
+![](https://raw.githubusercontent.com/discourse/discourse-plugin-microsoft365-auth/master/screenshot-admin-settings.png)
 
 Login Screen  
-![](https://raw.githubusercontent.com/discourse/discourse-plugin-office365-auth/master/screenshot-login-screen.png)
+![](https://raw.githubusercontent.com/discourse/discourse-plugin-microsoft365-auth/master/screenshot-login-screen.png)
 
 ## How to Help
 
@@ -15,13 +15,13 @@ Login Screen
 
 ## Prerequisites
 
-First, you need access to an account in an Office 365 Subscription. This can be an existing subscription you have for your work or business, an [Office 365 Developer Subscription](http://dev.office.com/devprogram), or you can start with a [free 30-day trial](https://portal.office.com/Signup/Signup.aspx). 
+First, you need access to an account in an Microsoft 365 Subscription. This can be an existing subscription you have for your work or business, an [Microsoft 365 Developer Subscription](http://dev.office.com/devprogram), or you can start with a [free 30-day trial](https://portal.office.com/Signup/Signup.aspx). 
 
 The name on the subscription you use to register your app will show as the publisher for that app when users are prompted to give consent.
 
 ## Installation
 
-1. Follow the directions at [Install a Plugin](https://meta.discourse.org/t/install-a-plugin/19157) using `https://github.com/discourse/discourse-plugin-office365-auth.git` as the repository URL.
+1. Follow the directions at [Install a Plugin](https://meta.discourse.org/t/install-a-plugin/19157) using `https://github.com/discourse/discourse-plugin-microsoft365-auth.git` as the repository URL.
 
 2. Rebuild the app using `./launcher rebuild app`
 
@@ -30,7 +30,7 @@ The name on the subscription you use to register your app will show as the publi
   * Click Add Platform and choose "Web"
   * Add your website as a Redirect URI in this format:  
      `https://`[YOUR_FORUM_FQDN]`/auth/microsoft_office365/callback`  
-     (Note that Office 365 requires HTTPS, this will not work without it)
+     (Note that Microsoft 365 requires HTTPS, this will not work without it)
   * Ensure that there is a Delegated Permission of `User.Read`
   * Leave the `Live SDK support` option checked.
   * Click Save, the Client ID will be visible in the My Applications list 

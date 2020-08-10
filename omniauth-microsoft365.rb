@@ -5,7 +5,7 @@ require "omniauth/strategies/oauth2"
 module OmniAuth
   module Strategies
     class MicrosoftOffice365 < OmniAuth::Strategies::OAuth2
-      option :name, :microsoft_office365
+      option :name, :microsoft_365
 
       DEFAULT_SCOPE = "openid email profile https://graph.microsoft.com/User.Read"
 
