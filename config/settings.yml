@@ -8,3 +8,6 @@ plugins:
   office365_secret:
     client: false
     default: ''
+  office365_tenant_id:
+    client: false
+    default: ''
