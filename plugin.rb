@@ -39,6 +39,14 @@ class Office365Authenticator < ::Auth::OAuth2Authenticator
                         strategy = env['omniauth.strategy']
                         strategy.options[:client_id] = SiteSetting.office365_client_id
                         strategy.options[:client_secret] = SiteSetting.office365_secret
+
+                        unless SiteSetting.office365_tenant_id.empty?
+                          strategy.options[:client_options] = {
+                            site: 'https://login.microsoftonline.com',
+                            token_url: '/common/oauth2/v2.0/token',
+                            authorize_url: "/#{SiteSetting.office365_tenant_id}/oauth2/v2.0/authorize"
+                          }
+                        end
                       }
   end
 
