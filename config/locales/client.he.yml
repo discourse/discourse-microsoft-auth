@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 he:
+  js:
+    login:
+      microsoft_office365:
+        name: "Office 365"
+        title: "עם Office 365"
+        message: "כניסה דרך Office 365"

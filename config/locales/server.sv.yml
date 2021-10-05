@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 sv:
+  site_settings:
+    office365_enabled: 'Tillåta användare att autentisera genom Office365?'
+    office365_client_id: 'Office365-app-ID/klient-ID (Behöver du ett? Gå till <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    office365_secret: 'Hemligt lösenord för Office365'
