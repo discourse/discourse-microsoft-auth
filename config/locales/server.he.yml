@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 he:
+  site_settings:
+    office365_enabled: 'לאפשר למשתמשים לעבור אימות דרך Office365?'
+    office365_client_id: 'מזהה יישום/מזהה לקוח של Office365 (יש לך צורך בכאלה? אפשר לבקר בכתובת <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    office365_secret: 'ססמה סודית של Office365'

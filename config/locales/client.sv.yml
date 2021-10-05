@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 sv:
+  js:
+    login:
+      microsoft_office365:
+        name: "Office 365"
+        title: "med Office 365"
+        message: "Logga in via Office 365"
