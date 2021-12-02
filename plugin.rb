@@ -2,35 +2,17 @@
 
 # name: discourse-plugin-office365-auth
 # about: Enable Login via Office365
-# version: 0.0.1
+# version: 1.0
 # authors: Matthew Wilkin
 # url: https://github.com/discourse/discourse-plugin-office365-auth
 
-require 'auth/oauth2_authenticator'
-require File.expand_path('../omniauth-microsoft365.rb', __FILE__)
+require_relative "lib/omniauth-microsoft365"
 
 enabled_site_setting :office365_enabled
 
-class Office365Authenticator < ::Auth::OAuth2Authenticator
-  PLUGIN_NAME = 'oauth-office365'
-
+class ::Office365Authenticator < ::Auth::ManagedAuthenticator
   def name
     'microsoft_office365'
-  end
-
-  def after_authenticate(auth_token)
-    result = super
-
-    if result.user && result.email && (result.user.email != result.email)
-      begin
-        result.user.primary_email.update!(email: result.email)
-      rescue
-        used_by = User.find_by_email(result.email)&.username
-        Rails.loger.warn("FAILED to update email for #{user.username} to #{result.email} cause it is in use by #{used_by}")
-      end
-    end
-
-    result
   end
 
   def register_middleware(omniauth)
@@ -47,19 +29,4 @@ class Office365Authenticator < ::Auth::OAuth2Authenticator
   end
 end
 
-auth_provider enabled_setting: "office365_enabled",
-              frame_width: 920,
-              frame_height: 800,
-              authenticator: Office365Authenticator.new(
-                'microsoft_office365',
-                trusted: true,
-                auto_create_account: true
-              )
-
-register_css <<CSS
-
-.btn-social.microsoft_office365 {
-  background: #EB3D01;
-}
-
-CSS
+auth_provider authenticator: Office365Authenticator.new
