@@ -1,5 +1,5 @@
 en:
   site_settings:
-    office365_enabled: 'Allow users to authenticate using Office365?'
-    office365_client_id: 'Office365 App ID/Client Id (need one? visit <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
-    office365_secret: 'Office365 Secret Password'
+    microsoft_auth_enabled: 'Allow users to authenticate using Microsoft?'
+    microsoft_auth_client_id: 'Microsoft App ID/Client Id (need one? visit <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_secret: 'Microsoft Secret Password'

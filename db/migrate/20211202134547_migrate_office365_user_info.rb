@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class MigrateFacebookUserInfo < ActiveRecord::Migration[6.1]
+class MigrateOffice365UserInfo < ActiveRecord::Migration[6.1]
   def up
     execute <<~SQL
     INSERT INTO user_associated_accounts (
