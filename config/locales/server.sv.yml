@@ -6,6 +6,6 @@
 
 sv:
   site_settings:
-    office365_enabled: 'Tillåta användare att autentisera genom Office365?'
-    office365_client_id: 'Office365-app-ID/klient-ID (Behöver du ett? Gå till <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
-    office365_secret: 'Hemligt lösenord för Office365'
+    microsoft_auth_enabled: 'Tillåta användare att autentisera genom Microsoft?'
+    microsoft_auth_client_id: 'Microsoft App-ID/Klient-ID (behöver du ett? besök <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_secret: 'Microsofts hemliga lösenord'

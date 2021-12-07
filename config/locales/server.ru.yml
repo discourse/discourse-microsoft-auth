@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 ru:
+  site_settings:
+    microsoft_auth_enabled: 'Разрешать пользователям проходить аутентификацию с использованием Microsoft?'
+    microsoft_auth_client_id: 'Microsoft App ID/Client Id (Ещё не получили? Посетите <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_secret: 'Секретный пароль Microsoft'
