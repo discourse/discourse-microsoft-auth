@@ -21,6 +21,7 @@ class MigrateOffice365UserInfo < ActiveRecord::Migration[6.1]
       updated_at
     FROM oauth2_user_infos
     WHERE provider = 'microsoft_office365'
+    ON CONFLICT DO NOTHING
     SQL
   end
 
