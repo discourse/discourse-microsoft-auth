@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 fa_IR:
+  site_settings:
+    microsoft_auth_enabled: 'به کاربران اجازه می‌دهید با استفاده از مایکروسافت احراز هویت کنند؟'
+    microsoft_auth_client_id: 'شناسه مشتری برنامه مایکروسافت «اگر نیاز دارید؟ از این پیوند <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a> بازدید کنید»'
+    microsoft_auth_client_secret: 'کلید مخفی مایکروسافت'
