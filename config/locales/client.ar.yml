@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 ar:
+  js:
+    login:
+      microsoft_office365:
+        name: "Microsoft"
+        title: "باستخدام Microsoft"
