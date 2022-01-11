@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 pt_BR:
+  js:
+    login:
+      microsoft_office365:
+        name: "Microsoft"
+        title: "com a Microsoft"

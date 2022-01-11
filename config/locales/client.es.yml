@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 es:
+  js:
+    login:
+      microsoft_office365:
+        name: "Microsoft"
+        title: "con Microsoft"
