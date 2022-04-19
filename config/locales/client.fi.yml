@@ -9,4 +9,3 @@ fi:
     login:
       microsoft_office365:
         name: "Microsoft"
-        title: "Microsoftilla"
