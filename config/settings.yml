@@ -1,11 +1,11 @@
 plugins:
-  office365_enabled:
+  microsoft_auth_enabled:
     client: true
     default: false
-  office365_client_id:
+  microsoft_auth_client_id:
     client: false
     default: ''
-  office365_secret:
+  microsoft_auth_client_secret:
     client: false
     default: ''
   office365_tenant_id:

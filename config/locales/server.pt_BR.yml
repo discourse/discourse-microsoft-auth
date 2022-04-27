@@ -1,0 +1,11 @@
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
+#
+# To work with us on translations, join this project:
+# https://translate.discourse.org/
+
+pt_BR:
+  site_settings:
+    microsoft_auth_enabled: 'Permitir que os(as) usuários(as) façam autenticação via Microsoft?'
+    microsoft_auth_client_id: 'ID de App/Cliente da Microsoft (precisa de um? Acesse <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_secret: 'Senha secreta da Microsoft'

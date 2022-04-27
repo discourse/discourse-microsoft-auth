@@ -2,6 +2,5 @@ en:
   js:
     login:
       microsoft_office365:
-        name: "Office 365"
-        title: "with Office 365"
-        message: "Log in via Office 365"
+        name: "Microsoft"
+        title: "Login with Microsoft"
