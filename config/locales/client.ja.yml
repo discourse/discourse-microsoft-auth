@@ -9,3 +9,4 @@ ja:
     login:
       microsoft_office365:
         name: "Microsoft"
+        title: "Microsoft でログイン"

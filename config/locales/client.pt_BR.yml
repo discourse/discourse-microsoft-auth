@@ -9,3 +9,4 @@ pt_BR:
     login:
       microsoft_office365:
         name: "Microsoft"
+        title: "Entrar com Microsoft"
