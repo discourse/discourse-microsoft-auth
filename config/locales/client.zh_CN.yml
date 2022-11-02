@@ -9,3 +9,4 @@ zh_CN:
     login:
       microsoft_office365:
         name: "Microsoft"
+        title: "使用 Microsoft 登录"

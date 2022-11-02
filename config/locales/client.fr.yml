@@ -9,3 +9,4 @@ fr:
     login:
       microsoft_office365:
         name: "Microsoft"
+        title: "Se connecter avec Microsoft"
