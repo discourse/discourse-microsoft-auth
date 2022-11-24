@@ -29,6 +29,13 @@ class ::MicrosoftAuthenticator < ::Auth::ManagedAuthenticator
   def enabled?
     SiteSetting.microsoft_auth_enabled
   end
+
+  # Microsoft doesn't let users login with OAuth2 to websites unless the user
+  # has verified their email address so we can assume whatever email we get
+  # from MS is verified.
+  def primary_email_verified?(auth_token)
+    true
+  end
 end
 
 auth_provider authenticator: MicrosoftAuthenticator.new,
