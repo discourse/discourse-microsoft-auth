@@ -14,16 +14,19 @@ register_svg_icon "fab-microsoft"
 
 class ::MicrosoftAuthenticator < ::Auth::ManagedAuthenticator
   def name
-    'microsoft_office365'
+    "microsoft_office365"
   end
 
   def register_middleware(omniauth)
     omniauth.provider :microsoft_office365,
-                      setup: lambda { |env|
-                        strategy = env['omniauth.strategy']
-                        strategy.options[:client_id] = SiteSetting.microsoft_auth_client_id
-                        strategy.options[:client_secret] = SiteSetting.microsoft_auth_client_secret
-                      }
+                      setup:
+                        lambda { |env|
+                          strategy = env["omniauth.strategy"]
+                          strategy.options[:client_id] = SiteSetting.microsoft_auth_client_id
+                          strategy.options[
+                            :client_secret
+                          ] = SiteSetting.microsoft_auth_client_secret
+                        }
   end
 
   def enabled?
@@ -38,5 +41,4 @@ class ::MicrosoftAuthenticator < ::Auth::ManagedAuthenticator
   end
 end
 
-auth_provider authenticator: MicrosoftAuthenticator.new,
-              icon: "fab-microsoft"
+auth_provider authenticator: MicrosoftAuthenticator.new, icon: "fab-microsoft"
