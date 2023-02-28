@@ -9,3 +9,4 @@ ru:
     login:
       microsoft_office365:
         name: "Microsoft"
+        title: "Вход через Microsoft"
