@@ -7,5 +7,5 @@
 it:
   site_settings:
     microsoft_auth_enabled: 'Consentire agli utenti di autenticarsi utilizzando Microsoft?'
-    microsoft_auth_client_id: 'ID app Microsoft/ID client (non ne hai uno? visita il sito <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_id: 'ID app Microsoft/ID client (non ne hai uno? visita il sito <a href="https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade</a>)'
     microsoft_auth_client_secret: 'Password segreta Microsoft'
