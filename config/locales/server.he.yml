@@ -7,5 +7,5 @@
 he:
   site_settings:
     microsoft_auth_enabled: 'לאפשר למשתמשים לעבור אימות דרך Microsoft?'
-    microsoft_auth_client_id: 'מזהה יישום/מזהה לקוח של Microsoft (יש לך צורך בכאלה? אפשר לבקר בכתובת <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_id: 'מזהה יישום/מזהה לקוח של Microsoft (יש לך צורך בכאלה? אפשר לבקר בכתובת <a href="https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade</a>)'
     microsoft_auth_client_secret: 'סיסמה סודית של Microsoft'

@@ -7,5 +7,5 @@
 nl:
   site_settings:
     microsoft_auth_enabled: 'Gebruikers toestaan zich aan te melden met Microsoft?'
-    microsoft_auth_client_id: 'Microsoft-app-id/-client-ID (Een nodig? Ga naar <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_id: 'Microsoft-app-id/-client-ID (Een nodig? Ga naar <a href="https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade</a>)'
     microsoft_auth_client_secret: 'Geheim Microsoft-wachtwoord'

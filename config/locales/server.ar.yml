@@ -7,5 +7,5 @@
 ar:
   site_settings:
     microsoft_auth_enabled: 'هل تريد السماح للمستخدمين بالمصادقة باستخدام Microsoft؟'
-    microsoft_auth_client_id: 'معرِّف تطبيق Microsoft/معرِّف العميل (هل تحتاج واحدًا؟ انتقل إلى <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_id: 'معرِّف تطبيق Microsoft/معرِّف العميل (هل تحتاج واحدًا؟ انتقل إلى <a href="https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade</a>)'
     microsoft_auth_client_secret: 'كلمة مرور Microsoft السرية'

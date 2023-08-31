@@ -7,5 +7,5 @@
 ru:
   site_settings:
     microsoft_auth_enabled: 'Разрешать пользователям аутентифицироваться через Microsoft?'
-    microsoft_auth_client_id: 'ID приложения Microsoft/ID клиента (как получить ID см. здесь: <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_id: 'ID приложения Microsoft/ID клиента (как получить ID см. здесь: <a href="https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade">https://aad.portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade</a>)'
     microsoft_auth_client_secret: 'Секретный пароль Microsoft'
