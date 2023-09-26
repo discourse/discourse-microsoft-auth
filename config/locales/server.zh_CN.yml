@@ -7,5 +7,3 @@
 zh_CN:
   site_settings:
     microsoft_auth_enabled: '允许用户使用 Microsoft 进行身份验证？'
-    microsoft_auth_client_id: 'Microsoft 应用 ID/客户端 ID（需要一个？请访问 <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>）'
-    microsoft_auth_client_secret: 'Microsoft 密码'
