@@ -7,5 +7,3 @@
 es:
   site_settings:
     microsoft_auth_enabled: '¿Permitir a los usuarios la autenticación mediante Microsoft?'
-    microsoft_auth_client_id: 'ID de aplicación/ID de cliente de Microsoft (¿necesitas una? visita <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
-    microsoft_auth_client_secret: 'Contraseña secreta de Microsoft'

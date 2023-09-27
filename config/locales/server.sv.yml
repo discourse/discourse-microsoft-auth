@@ -7,5 +7,3 @@
 sv:
   site_settings:
     microsoft_auth_enabled: 'Tillåta användare att autentisera genom Microsoft?'
-    microsoft_auth_client_id: 'Microsoft App-ID/Klient-ID (behöver du ett? besök <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
-    microsoft_auth_client_secret: 'Microsofts hemliga lösenord'

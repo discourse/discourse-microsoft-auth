@@ -7,5 +7,3 @@
 tr_TR:
   site_settings:
     microsoft_auth_enabled: 'Kullanıcıların Microsoft kullanarak kimlik doğrulaması yapmasına izin verilsin mi?'
-    microsoft_auth_client_id: 'Microsoft Uygulama Kimliği/İstemci Kimliği (ihtiyacınız var mı? <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a> adresini ziyaret edin)'
-    microsoft_auth_client_secret: 'Microsoft Gizli Şifre'

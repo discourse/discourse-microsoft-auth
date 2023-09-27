@@ -7,5 +7,3 @@
 ja:
   site_settings:
     microsoft_auth_enabled: 'Microsoft を使ったユーザーの認証を許可しますか？'
-    microsoft_auth_client_id: 'Microsoft アプリ ID/クライアント ID（必要ですか？<a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a> にアクセスしてください）'
-    microsoft_auth_client_secret: 'Microsoft シークレットパスワード'
