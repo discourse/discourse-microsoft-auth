@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 cs:
+  js:
+    login:
+      microsoft_office365:
+        title: "Přihlášení pomocí služby Microsoft"
