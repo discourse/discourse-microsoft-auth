@@ -3,7 +3,7 @@
 # name: discourse-microsoft-auth
 # about: Enable Login via Microsoft Identity Platform (Office 365 / Microsoft 365 Accounts)
 # meta_topic_id: 51731
-# version: 1.0
+# version: 2.0
 # authors: Matthew Wilkin
 # url: https://github.com/discourse/discourse-microsoft-auth
 
@@ -34,11 +34,8 @@ class ::MicrosoftAuthenticator < ::Auth::ManagedAuthenticator
     SiteSetting.microsoft_auth_enabled
   end
 
-  # Microsoft doesn't let users login with OAuth2 to websites unless the user
-  # has verified their email address so we can assume whatever email we get
-  # from MS is verified.
   def primary_email_verified?(auth_token)
-    true
+    SiteSetting.microsoft_auth_email_verified
   end
 end
 
