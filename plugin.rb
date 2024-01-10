@@ -24,15 +24,19 @@ class ::MicrosoftAuthenticator < ::Auth::ManagedAuthenticator
                         lambda { |env|
                           strategy = env["omniauth.strategy"]
                           strategy.options[:client_id] = SiteSetting.microsoft_auth_client_id
-                          strategy.options[:client_secret] = SiteSetting.microsoft_auth_client_secret
+                          strategy.options[
+                            :client_secret
+                          ] = SiteSetting.microsoft_auth_client_secret
                           strategy.options[:client_options] = {
-                                  site: "https://login.microsoftonline.com",
-                                  authorize_url: "/#{SiteSetting.microsoft_auth_tenant_id}/oauth2/v2.0/authorize",
-                                  token_url: "/#{SiteSetting.microsoft_auth_tenant_id}/oauth2/v2.0/token"
+                            site: "https://login.microsoftonline.com",
+                            authorize_url:
+                            "/#{SiteSetting.microsoft_auth_tenant_id}/oauth2/v2.0/authorize",
+                            token_url:
+                            "/#{SiteSetting.microsoft_auth_tenant_id}/oauth2/v2.0/token"
                           }
                         }
-  end         
-  
+  end
+
   def enabled?
     SiteSetting.microsoft_auth_enabled
   end
