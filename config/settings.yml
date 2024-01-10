@@ -8,3 +8,9 @@ plugins:
   microsoft_auth_client_secret:
     client: false
     default: ''
+  microsoft_auth_single_tenant:
+    client: false
+    default: false
+  microsoft_auth_single_tenant_id:
+    client: false
+    default: ''
