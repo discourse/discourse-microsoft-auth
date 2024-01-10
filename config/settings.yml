@@ -9,5 +9,5 @@ plugins:
     client: false
     default: ''
   microsoft_auth_tenant_id:
-    client: false
+    client: true
     default: 'common'
