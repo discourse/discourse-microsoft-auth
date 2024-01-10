@@ -8,7 +8,6 @@ module OmniAuth
       option :name, :microsoft_office365
 
       DEFAULT_SCOPE = "openid email profile https://graph.microsoft.com/User.Read"
-      #Tenant_ID = "3faa2993-d068-49c7-b931-801c719f9ff4"
       Tenant_ID = SiteSetting.microsoft_auth_tenant_id
       
       option :client_options,
