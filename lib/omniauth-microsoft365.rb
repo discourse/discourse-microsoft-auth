@@ -9,14 +9,16 @@ module OmniAuth
 
       DEFAULT_SCOPE = "openid email profile https://graph.microsoft.com/User.Read"
       Tenant_ID = "common"
-      if SiteSetting.microsoft_auth_single_tenant
-        Tenant_ID = SiteSetting.microsoft_auth_single_tenant_id
-      end
+     # if SiteSetting.microsoft_auth_single_tenant
+     #   Tenant_ID = SiteSetting.microsoft_auth_single_tenant_id
+     # end
 
       option :client_options,
              site: "https://login.microsoftonline.com",
-             authorize_url: "/%s/oauth2/v2.0/authorize" % Tenant_ID,
-             token_url: "/%s/oauth2/v2.0/token" % Tenant_ID
+             authorize_url: "/common/oauth2/v2.0/authorize",
+             token_url: "/common/oauth2/v2.0/token"
+      #       authorize_url: "/#{Tenant_ID}/oauth2/v2.0/authorize",
+      #       token_url: "/#{Tenant_ID}/oauth2/v2.0/token"
       option :authorize_options, [:scope]
 
       uid { raw_info["id"] }
