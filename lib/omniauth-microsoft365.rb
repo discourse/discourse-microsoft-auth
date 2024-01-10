@@ -15,10 +15,10 @@ module OmniAuth
 
       option :client_options,
              site: "https://login.microsoftonline.com",
-             authorize_url: "/common/oauth2/v2.0/authorize",
-             token_url: "/common/oauth2/v2.0/token"
-      #       authorize_url: "/#{Tenant_ID}/oauth2/v2.0/authorize",
-      #       token_url: "/#{Tenant_ID}/oauth2/v2.0/token"
+      #       authorize_url: "/common/oauth2/v2.0/authorize",
+      #       token_url: "/common/oauth2/v2.0/token"
+             authorize_url: "/#{Tenant_ID}/oauth2/v2.0/authorize",
+             token_url: "/#{Tenant_ID}/oauth2/v2.0/token"
       option :authorize_options, [:scope]
 
       uid { raw_info["id"] }
