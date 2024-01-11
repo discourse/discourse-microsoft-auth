@@ -1,7 +1,7 @@
 {
-  "name": "discourse-plugin-office365-auth",
-  "version": "1.0.0",
-  "repository": "git@github.com:discourse/discourse-plugin-office365-auth.git",
+  "name": "discourse-microsoft-auth",
+  "version": "1.0.1",
+  "repository": "git@github.com:discourse/discourse-microsoft-auth.git",
   "author": "Discourse",
   "license": "MIT",
   "devDependencies": {
