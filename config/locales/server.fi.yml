@@ -7,5 +7,5 @@
 fi:
   site_settings:
     microsoft_auth_enabled: 'Sallitaanko käyttäjien tehdä todennus Microsoftilla?'
-    microsoft_auth_client_id: 'Microsoft App ID/Client ID (EI Secret ID -tunniste) - Määritä osoitteessa <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
-    microsoft_auth_client_secret: 'Microsoft Secret Password (käytä arvoa, EI Secret ID -tunnistetta)'
+    microsoft_auth_client_id: 'Microsoft App ID/Client ID (EI Secret ID) – määritä osoitteessa <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_secret: 'Microsoft Secret Password (käytä arvoa, EI Secret ID:tä)'
