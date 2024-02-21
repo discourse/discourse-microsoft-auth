@@ -8,3 +8,5 @@ plugins:
   microsoft_auth_client_secret:
     client: false
     default: ''
+  microsoft_auth_email_verified:
+    default: false

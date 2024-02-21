@@ -64,9 +64,11 @@ describe "Microsoft OAuth2" do
     )
   end
 
-  # microsoft doesn't allow oauth2 logins unless the user has verified their email
-  it "signs in the user whose email matches the email included in the API response from microsoft" do
+  it "signs in the user whose email matches the email included in the API response from microsoft when `microsoft_auth_email_verified` site setting is true" do
+    SiteSetting.microsoft_auth_email_verified = true
+
     post "/auth/microsoft_office365"
+
     expect(response.status).to eq(302)
     expect(response.location).to start_with(
       "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
@@ -79,8 +81,32 @@ describe "Microsoft OAuth2" do
            state: session["omniauth.state"],
            code: temp_code,
          }
+
     expect(response.status).to eq(302)
     expect(response.location).to eq("http://test.localhost/")
     expect(session[:current_user_id]).to eq(user1.id)
+  end
+
+  it "does not sign in the user whose email matches the email included in the API response from microsoft when `microsoft_auth_email_verified` site setting is false" do
+    SiteSetting.microsoft_auth_email_verified = false
+
+    post "/auth/microsoft_office365"
+
+    expect(response.status).to eq(302)
+    expect(response.location).to start_with(
+      "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+    )
+
+    setup_ms_emails_stub(email: user1.email)
+
+    post "/auth/microsoft_office365/callback",
+         params: {
+           state: session["omniauth.state"],
+           code: temp_code,
+         }
+
+    expect(response.status).to eq(302)
+    expect(response.location).to eq("http://test.localhost/")
+    expect(session[:current_user_id]).to eq(nil)
   end
 end
