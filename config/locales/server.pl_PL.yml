@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 pl_PL:
+  site_settings:
+    microsoft_auth_enabled: 'Zezwolić użytkownikom na uwierzytelnianie za pomocą Microsoft?'
+    microsoft_auth_client_id: 'Microsoft App ID/Client ID (NIE Secret ID) - aby skonfigurować odwiedź <a href="https://apps.dev.microsoft.com/#/appList">https://apps.dev.microsoft.com/#/appList</a>)'
+    microsoft_auth_client_secret: 'Tajne hasło Microsoft (użyj wartości, a NIE tajnego identyfikatora)'
