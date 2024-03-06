@@ -44,17 +44,6 @@ module OmniAuth
       def callback_url
         full_host + script_name + callback_path
       end
-
-      # alias :oauth2_access_token :access_token
-      #
-      # def access_token
-      #   ::OAuth2::AccessToken.new(client, oauth2_access_token.token, {
-      #     :mode => :query,
-      #     :param_name => 'oauth2_access_token',
-      #     :expires_in => oauth2_access_token.expires_in,
-      #     :expires_at => oauth2_access_token.expires_at
-      #   })
-      # end
     end
   end
 end
