@@ -6,4 +6,4 @@
 
 sv:
   site_settings:
-    microsoft_auth_enabled: 'Tillåta användare att autentisera genom Microsoft?'
+    microsoft_auth_enabled: "Tillåta användare att autentisera genom Microsoft?"
