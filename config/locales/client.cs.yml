@@ -9,4 +9,4 @@ cs:
     login:
       microsoft_office365:
         name: "Microsoft"
-        title: "Přihlášení pomocí služby Microsoft"
+        title: "Přihlásit se přes Microsoft"
