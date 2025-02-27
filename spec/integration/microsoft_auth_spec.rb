@@ -109,4 +109,17 @@ describe "Microsoft OAuth2" do
     expect(response.location).to eq("http://test.localhost/")
     expect(session[:current_user_id]).to eq(nil)
   end
+
+  context "when configured as single tenant" do
+    it "uses the tenant id from the site setting" do
+      SiteSetting.microsoft_auth_tenant_id = "my-tenant-id"
+
+      post "/auth/microsoft_office365"
+
+      expect(response.status).to eq(302)
+      expect(response.location).to start_with(
+        "https://login.microsoftonline.com/my-tenant-id/oauth2/v2.0/authorize",
+      )
+    end
+  end
 end
