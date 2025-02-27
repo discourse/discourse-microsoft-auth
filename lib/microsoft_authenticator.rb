@@ -14,6 +14,12 @@ class MicrosoftAuthenticator < ::Auth::ManagedAuthenticator
                           strategy.options[
                             :client_secret
                           ] = SiteSetting.microsoft_auth_client_secret
+                          strategy.options[:client_options] = {
+                            site: "https://login.microsoftonline.com",
+                            authorize_url:
+                              "/#{SiteSetting.microsoft_auth_tenant_id}/oauth2/v2.0/authorize",
+                            token_url: "/#{SiteSetting.microsoft_auth_tenant_id}/oauth2/v2.0/token",
+                          }
                         }
   end
 
